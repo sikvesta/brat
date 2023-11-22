@@ -1,3 +1,3 @@
-import os
+#import os
 
-os.system('python3 standalone.py')
+#os.system('python3 standalone.py')
