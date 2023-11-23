@@ -27,9 +27,6 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/nlplab/brat"
 
-[tool.setuptools.packages.find]
-where = ["src/brat_annotation_tool"]
-
 [tool.hatch.build.targets.wheel]
 packages = ["src/brat_annotation_tool"]
 
@@ -40,7 +37,5 @@ artifacts = [
 ]
 
 [tool.hatch.build.targets.sdist]
+exclude = [".github", ".gitignore"]
 
-exclude = [".github"]
-
-[tool.hatch.build.targets.brat_annotation_tool]
