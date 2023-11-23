@@ -27,6 +27,9 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/nlplab/brat"
 
+[tool.setuptools.packages.find]
+where = ["src/brat_annotation_tool"]
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/brat_annotation_tool"]
 
