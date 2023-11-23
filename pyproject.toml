@@ -31,10 +31,15 @@ classifiers = [
 [tool.hatch.build]
 sources = ["src"]
 artifacts = [
-  "*.svg",
-]
+  "*.svg", "*.txt", "*ann", "*.js", "*.conf", 
+  "*.gz", "*.ogg", "*.cgi", "*.sh", "*.htaccess",
+  "*.xhtml", "*.html", "*.md", "*.png", "*.ttf",
+  "*.css", ".gif", ".pl"]
+exclude = [".github", "__pycache__", ".log"]
+
+
 
 [tool.hatch.build.targets.sdist]
 include = ["/src", "/tests"]
-exclude = [".github", ".gitignore"]
+exclude = [".github", "__pycache__", ".log"]
 
