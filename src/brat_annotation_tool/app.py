@@ -2,7 +2,7 @@ import os
 from flask import Flask, Blueprint, redirect
 
 # Prefix configuration
-root_url_prefix = os.getenv('FLASK_APP_URL_PREFIX', '/')
+#root_url_prefix = os.getenv('FLASK_APP_URL_PREFIX', '/')
 
 
 # Create app
@@ -20,6 +20,6 @@ def create_app():
         #return "<p>Hello, World!</p>"
         return redirect("www.google.com")
 
-    app.register_blueprint(root_bp, url_prefix=root_url_prefix)
+    #app.register_blueprint(root_bp, url_prefix=root_url_prefix)
 
     return app
