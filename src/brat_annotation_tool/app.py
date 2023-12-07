@@ -12,7 +12,7 @@ def create_app():
 
     @root_bp.route("/")
     def hello_world():
-        return redirect("//http:www.google.com")
+        return redirect("http://www.google.com")
 
     app.register_blueprint(root_bp, url_prefix=root_url_prefix)
 
