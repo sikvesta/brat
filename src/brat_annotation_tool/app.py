@@ -12,13 +12,9 @@ def create_app():
 
     @root_bp.route("/")
     def hello_world():
-        return "<p>Hello, World!</p>"
-        
-
-    @root_bp.route("/brat")
-    def brat():
-        #return "<p>Hello, World!</p>"
         return redirect("www.google.com")
+
+        
 
     app.register_blueprint(root_bp, url_prefix=root_url_prefix)
 
