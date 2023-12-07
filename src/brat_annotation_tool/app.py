@@ -15,7 +15,7 @@ def create_app():
         return "<p>Hello, World!</p>"
         
 
-        @root_bp.route("/brat")
+    @root_bp.route("/brat")
     def hello_world():
         #return "<p>Hello, World!</p>"
         return redirect("www.google.com")
