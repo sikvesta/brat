@@ -15,6 +15,9 @@ description = "brat annotation tool package"
 readme = "README.md"
 license = { file = "LICENSE.md" }
 requires-python = ">=3.8"
+dependencies = [
+    "flask",
+]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
