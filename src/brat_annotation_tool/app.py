@@ -16,7 +16,7 @@ def create_app():
         
 
     @root_bp.route("/brat")
-    def hello_world():
+    def brat():
         #return "<p>Hello, World!</p>"
         return redirect("www.google.com")
 
