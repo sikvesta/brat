@@ -34,7 +34,7 @@ classifiers = [
 [tool.hatch.build]
 sources = ["src"]
 artifacts = [
-  "*.svg", "*.txt", "*ann", "*.js", "*.conf", 
+  "*.svg", "*.txt", "*.ann", "*.js", "*.conf", 
   "*.gz", "*.ogg", "*.cgi", "*.sh", "*.htaccess",
   "*.xhtml", "*.html", "*.md", "*.png", "*.ttf",
   "*.css", ".gif", ".pl"]
