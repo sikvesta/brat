@@ -11,10 +11,6 @@ def create_app():
     root_bp = Blueprint("root", __name__, template_folder='templates')
 
     @root_bp.route("/")
-    def hello_world():
-        return "Hello brat"
-
-    @root_bp.route("/brat")
     def brat():
         return redirect("http://0.0.0.0:8001")
 
